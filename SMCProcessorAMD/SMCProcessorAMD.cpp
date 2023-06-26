@@ -3,7 +3,7 @@
 
 OSDefineMetaClassAndStructors(SMCProcessorAMD, IOService);
 
-#define TCTL_OFFSET_TABLE_LEN 6
+#define TCTL_OFFSET_TABLE_LEN 7
 static constexpr const struct tctl_offset tctl_offset_table[] = {
     { 0x17, "AMD Ryzen 5 1600X", 20 },
     { 0x17, "AMD Ryzen 7 1700X", 20 },
@@ -11,6 +11,7 @@ static constexpr const struct tctl_offset tctl_offset_table[] = {
     { 0x17, "AMD Ryzen 7 2700X", 10 },
     { 0x17, "AMD Ryzen Threadripper 19", 27 }, /* 19{00,20,50}X */
     { 0x17, "AMD Ryzen Threadripper 29", 27 }, /* 29{20,50,70,90}[W]X */
+    { 0x17, "AMD Ryzen 5 5500U", 5 },
 };
 
 
